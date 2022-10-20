@@ -29,7 +29,7 @@ ECHO Rebooting device into download mode. DO NOT disconnect your device!
 fastboot reboot bootloader
 timeout /t 5
 cls
-ECHO Done xD
+ECHO Well done xD
 ECHO DON'T FORGET TO FLASH A FIRMWARE WITH NOST OR OST LA.
 ECHO enjoy xD
 timeout /t 5
