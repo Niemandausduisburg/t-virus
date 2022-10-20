@@ -6,10 +6,10 @@ ECHO "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_   . _  _|_ _ || _ _ "
 ECHO "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  || )_)|_(_|||(-|  "
 ECHO "                                                                     "
 ECHO Which option do you need?
-ECHO - Flash T-VIRUS [1]
-ECHO - Flash Stock ROM [2]
+ECHO - Flash T-VIRUS for flashing custom ROMs [1]
+ECHO - Revert to stock ROM [2]
 ECHO or
-ECHO - Restore Stock-partition-table [3]
+ECHO - Restore Stock-partition-table for using NOST [3]
 choice /n /c:123 %1
 if ERRORLEVEL ==1 goto TVIRUS
 if ERRORLEVEL ==2 goto STOCK

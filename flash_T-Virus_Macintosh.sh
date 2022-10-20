@@ -5,10 +5,10 @@ echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_   . _  _|_ _ || _ _ "
 echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  || )_)|_(_|||(-|  "
 echo ""
 read -n 1 -p $"Which option do you need?
-- Flash T-VIRUS [1]
-- Flash Stock ROM [2]
+- Flash T-VIRUS for flashing custom ROMs [1]
+- Revert to stock ROM [2]
 or
-- Restore Stock-partition-table [3]" answer1
+- Restore Stock-partition-table for using NOST [3]" answer1
 if [ "$answer1" == "1" ]
 then
 clear

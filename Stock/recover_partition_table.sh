@@ -30,7 +30,7 @@ echo "Rebooting device into download mode. DO NOT disconnect your device!"
 fastboot reboot bootloader
 sleep 5
 clear
-echo "Done xD"
+echo "Well done xD"
 echo "DON'T FORGET TO FLASH A FIRMWARE WITH NOST OR OST LA."
 echo "enjoy xD"
 sleep 5
