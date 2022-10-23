@@ -4,7 +4,7 @@ echo "                          ___          __      __                 __      
 echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \  /|  | _  _|_ _ || _ _ "
 echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/.  |  || )_)|_(_|||(-|  "
 echo ""                                                                                   
-echo "This will flash the Nokia Stock ROM 516A (Android 9) on your device."
+echo "This will flash the Nokia Stock ROM 5140(Android 10) on your device."
 sleep 5s
 clear
 echo "WARNING!"
@@ -63,27 +63,28 @@ clear
 echo "Flashing Stock ROM"
 ./fastboot flash boot_a boot.img
 ./fastboot flash boot_b boot.img
-./fastboot flash box box.bin
+./fastboot flash box box.img
 ./fastboot flash cda_a cda.img
 ./fastboot flash cda_b cda.img
 ./fastboot flash dsp_a dsp.bin
 ./fastboot flash dsp_b dsp.bin
-./fastboot flash elabel elabel.bin
+./fastboot flash elabel elabel.img
 ./fastboot flash hidden_a hidden.img
 ./fastboot flash hidden_b hidden.img
-./fastboot flash keystore keystore.bin
-./fastboot flash logdump logdump.bin
-./fastboot flash misc misc.bin
+./fastboot flash keystore keystore.img
+./fastboot flash logdump logdump.img
+./fastboot flash misc misc.img
 ./fastboot flash modem_a modem.bin
 ./fastboot flash modem_b modem.bin
 ./fastboot flash persist persist.img
 ./fastboot flash splash2 splash2.img
-./fastboot flash ssd ssd.bin
+./fastboot flash ssd ssd.img
 ./fastboot flash sutinfo sutinfo.img
 ./fastboot flash system_a system.img
 ./fastboot flash system_b system.img
 ./fastboot flash systeminfo_a systeminfo.img
 ./fastboot flash systeminfo_b systeminfo.img
+./fastboot flash vendor vendor.img
 clear
 echo "Well done xD"
 echo "Switching to Slot A"
