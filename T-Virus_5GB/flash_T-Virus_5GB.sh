@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "                          ___          __      __                 __      __                          "
-echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \    /| | _  _|_ _ || _ _ "
-echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .   | || )_)|_(_|||(-|  "
-echo "                                                                                                      "  
+echo "                          ___          __      __                 __      __     __                    "
+echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \     _) | _  _|_ _ || _ _ "
+echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .  /__ || )_)|_(_|||(-|  "
+echo "                                                                                                       "  
 echo "This will flash the T-Virus modification in order to 'treble' your device for custom treble ROMs."
 sleep 5s
 clear
@@ -22,7 +22,7 @@ echo "THE FLASING PROGRESS WILL CONTINUE."
 sleep 10s
 clear
 
-read -N1 -p $"Are you ready to flash T-VIRUS 2.0? 
+read -N1 -p $"Are you ready to flash T-VIRUS 2.0.2? 
 Yes [y]
 No [n]" answer1
 if [ "${answer1,,}" == "y" ]
@@ -47,8 +47,10 @@ echo "Let's flash and get you infected xD"
 sleep 5s
 clear
 echo "Flashing Bootloader"
-fastboot flash abl abl.elf
-fastboot flash xbl xbl.elf
+fastboot flash abl_a abl.elf
+fastboot flash xbl_a xbl.elf
+fastboot flash abl_b abl.elf
+fastboot flash xbl_b xbl.elf
 echo "Rebooting device into download mode. DO NOT disconnect your device!"
 fastboot reboot bootloader
 clear

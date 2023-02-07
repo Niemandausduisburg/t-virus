@@ -1,9 +1,9 @@
 @ECHO OFF
 :welcome
-ECHO "                          ___          __      __                 __      __                          "
-ECHO "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \    /| | _  _|_ _ || _ _ "
-ECHO "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .   | || )_)|_(_|||(-|  "
-ECHO "                                                                                                      "  
+ECHO "                          ___          __      __                 __      __     __                    "
+ECHO "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \     _) | _  _|_ _ || _ _ "
+ECHO "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .  /__ || )_)|_(_|||(-|  "
+ECHO "                                                                                                       "  
 ECHO This will flash the T-Virus modification in order to 'treble' your device for custom treble ROMs.
 timeout /t 5
 cls
@@ -24,7 +24,7 @@ timeout /t 10
 cls
 
 :ask1
-ECHO Are you ready to flash T-VIRUS 2.0?
+ECHO Are you ready to flash T-VIRUS 2.0.2?
 ECHO Yes [Y]
 ECHO No [N]
 
@@ -63,8 +63,10 @@ ECHO Let's flash and get you infected xD
 timeout /t 5
 cls
 ECHO Flashing Bootloader
-fastboot flash abl abl.elf
-fastboot flash xbl xbl.elf
+fastboot flash abl_a abl.elf
+fastboot flash xbl_a xbl.elf
+fastboot flash abl_b abl.elf
+fastboot flash xbl_b xbl.elf
 ECHO Rebooting device into download mode. DO NOT disconnect your device!
 fastboot reboot bootloader
 cls

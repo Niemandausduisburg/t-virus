@@ -1,9 +1,9 @@
 @ECHO OFF
 :welcome
-ECHO "                          ___          __      __                 __      __                          "
-ECHO "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \    /| | _  _|_ _ || _ _ "
-ECHO "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .   | || )_)|_(_|||(-|  "
-ECHO "                                                                                                      "
+ECHO "                          ___          __      __                 __      __     __                     "
+ECHO "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \     _)  | _  _|_ _ || _ _ "
+ECHO "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/ .  /__  || )_)|_(_|||(-|  "
+ECHO "                                                                                                        "
 ECHO This will flash the Nokia Stock ROM 516A(Android 9) on your device.
 timeout /t 5
 cls
@@ -63,8 +63,10 @@ ECHO Let's flash and revert back to your old Stock ROM :)
 timeout /t 5
 cls
 ECHO Flashing Bootloader
-fastboot flash abl abl.elf
-fastboot flash xbl xbl.elf
+fastboot flash abl_a abl.elf
+fastboot flash xbl_a xbl.elf
+fastboot flash abl_b abl.elf
+fastboot flash xbl_b xbl.elf
 ECHO Rebooting device into download mode. DO NOT disconnect your device!
 fastboot reboot bootloader
 cls

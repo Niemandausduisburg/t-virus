@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "                          ___          __      __                 __      __                         "
-echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \  /|  | _  _|_ _ || _ _ "
-echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/.  |  || )_)|_(_|||(-|  "
+echo "                          ___          __      __                 __      __   __                     "
+echo "|  | _| _ _  _  _  |_ _    |  __ \  /||__)/  \(_    _ _   _ _|_    _)    /  \   _)  | _  _|_ _ || _ _ "
+echo "|/\|(-|(_(_)|||(-  |_(_)   |      \/ || \ \__/__)  | (-\/(-| |_   /__.   \__/. /__  || )_)|_(_|||(-|  "
 echo ""                 
 echo "This will flash the T-Virus modification in order to 'treble' your device for custom treble ROMs."
 sleep 5s
@@ -48,8 +48,10 @@ sleep 5s
 clear
 echo "Flashing Bootloader"
 chmod 755 fastboot
-./fastboot flash abl abl.elf
-./fastboot flash xbl xbl.elf
+./fastboot flash abl_a abl.elf
+./fastboot flash xbl_a xbl.elf
+./fastboot flash abl_b abl.elf
+./fastboot flash xbl_b xbl.elf
 echo "Rebooting device into download mode. DO NOT disconnect your device!"
 ./fastboot reboot bootloader
 clear
